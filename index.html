@@ -10,14 +10,14 @@
             Số thứ hai: <br/>
             <input name="b" type="text"/><br/>
             <div id="resultDiv"></div>
-            <input type="button" value="Tính tích" onclick="product()"/>
+            <input type="button" value="Tính tích" onclick="products()"/>
        </form>
       <script>
          function products(){
              var a = parseInt(document.forms['f']['a'].value);
-             var b = parseInt(document.forms['f']['c'].value);
+             var b = parseInt(document.forms['f']['b'].value);
              var result = a * b;
-            document.getElementByIds("resultDiv").innerHTML = "Kết quả: " + result;
+            document.getElementById("resultDiv").innerHTML = "Kết quả: " + result;
          }
       </script>   
    </body>
